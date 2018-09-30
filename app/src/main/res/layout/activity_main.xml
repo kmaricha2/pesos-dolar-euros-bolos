@@ -17,22 +17,22 @@
         android:gravity="center"
         android:text="@string/qual_o_valor_em_real"
         android:textColor="@color/colorSecundaryText"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edit_real"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:inputType="numberSigned"
         android:textAlignment="center"
         android:textColor="@color/colorSecundaryText"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:text="@string/total_em_dolar"
         android:textColor="@color/colorSecundaryText"
         android:textSize="15sp" />
@@ -46,11 +46,46 @@
         android:textColor="@color/colorAccent"
         android:textSize="25sp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/valor_em_euro"
+        android:textColor="@color/colorSecundaryText"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/euro"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/valor_em_bolivar"
+        android:textColor="@color/colorSecundaryText"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_bolivar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/bolivar"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
     <Button
         android:id="@+id/button_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:background="@color/colorAccent"
         android:text="@string/calcular"
         android:textColor="@color/colorLight" />

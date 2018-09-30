@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Busca os elementos da interface
         this.mViewHolder.editReal = (EditText) this.findViewById(R.id.edit_real);
         this.mViewHolder.textDollar = (TextView) this.findViewById(R.id.text_dollar);
+        this.mViewHolder.textEuro = (TextView) this.findViewById(R.id.text_euro);
+        this.mViewHolder.textBolibar=(TextView) this.findViewById(R.id.text_bolivar);
         this.mViewHolder.buttonCalculate = (Button) this.findViewById(R.id.button_calculate);
 
         // Limpa os valores iniciais
@@ -42,7 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             // Converte valores
             this.mViewHolder.textDollar.setText(String.format("%.2f", mReal * 0.00033613445));
-
+            this.mViewHolder.textEuro.setText(String.format("%.2f", mReal * 0.00029052876));
+            this.mViewHolder.textBolibar.setText(String.format("%.2f", mReal * 83242.36));
         }
     }
 
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void clearValues() {
         this.mViewHolder.textDollar.setText("");
+        this.mViewHolder.textEuro.setText("");
+        this.mViewHolder.textBolibar.setText("");
     }
 
     /**
@@ -59,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static class ViewHolder {
         private EditText editReal;
         private TextView textDollar;
+        private TextView textEuro;
+        private TextView textBolibar;
         private Button buttonCalculate;
     }
 }
